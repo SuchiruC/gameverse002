@@ -1,0 +1,46 @@
+<!-- checkout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <script src="../script/checkout.js" defer></script>
+</head>
+<body>
+
+    <a class="back-btn" href="cart.html">← Back to Cart</a>
+    <h1>Review Your Order</h1>
+
+    <table id="checkout-table" style="display:none;">
+        <thead>
+            <tr><th>Item</th><th>Quantity</th><th>Price (LKR)</th><th>Total (LKR)</th></tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+            <tr><td colspan="3"><strong>Total</strong></td><td id="checkout-total">Rs. 0</td></tr>
+        </tfoot>
+    </table>
+
+    <div class="empty" id="empty-msg" style="display:none;">Your cart is empty 🛒</div>
+
+    <h2>Enter Your Details</h2>
+    <form id="checkout-form">
+        <label>Full Name:
+            <input type="text" required>
+        </label>
+        <label>Email:
+            <input type="email" required>
+        </label>
+        <label>Address:
+            <textarea required></textarea>
+        </label>
+        <label>Payment Info:
+            <input type="text" placeholder="Card Number" required>
+        </label>
+        <button type="submit">Pay Now</button>
+    </form>
+
+</body>
+</html>

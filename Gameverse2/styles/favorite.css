@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background: #2980b9;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background: #1c5983;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.item-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.price {
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="number"] {
+    padding: 6px;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cart {
+    background-color: #2980b9;
+    color: white;
+}
+
+.btn-cart:hover {
+    background-color: #1c5983;
+}
+
+.btn-remove {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-remove:hover {
+    background-color: #c0392b;
+}
+
+.empty {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    color: #999;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    padding: 0 20px;
+}
+
+main {
+    flex: 1;
+}
+
+/* Optional: Ensure footer doesn't shrink and looks right */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
